@@ -2,14 +2,16 @@ import React from "react";
 import "./App.scss";
 import Home from "./pages/home";
 import CSS_PAGE from "./pages/css-challenge";
-import { Link, Route, Switch } from "react-router-dom";
+import { Link, Route, Switch, useRouteMatch } from "react-router-dom";
 
 function App() {
+  let match = useRouteMatch();
+  
   return (
     <div className="App">
       <header className="nav">
-        <Link to="/">Txt2Giphy</Link>
-        <Link to="/css-challenge">CSS Challenge</Link>
+        <Link to={`${match.url}/`}>Txt2Giphy</Link>
+        <Link to={`${match.url}/css-challenge`}>CSS Challenge</Link>
       </header>
       <Switch>
         <Route exact path="/" component={Home}></Route>
