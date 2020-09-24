@@ -50,7 +50,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        <h1>TxT to Giphy <span role="img" aria-label="funny">🤣</span></h1>
+        <h1>TxT to Giphy <span role="img" aria-label="funny">😁</span></h1>
       </div>
       <SearchBar onChange={handleInputChange} onKeyDown={handleKeyDown} />
       <div className="container">
