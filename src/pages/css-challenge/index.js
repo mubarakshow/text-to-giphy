@@ -1,24 +1,35 @@
-import React from 'react';
-import SystemMessage from '../../components/SytemMessage';
-import './style.scss'
+import React from "react";
+import SystemMessage from "../../components/SytemMessage";
+import "./style.scss";
+import { 
+  goodAlert, 
+  warningAlert,
+  dangerAlert 
+} from "./_variables.scss";
+import { Alerts } from './mock-alerts';
+let themes = {
+  good: goodAlert,
+  warning: warningAlert,
+  danger: dangerAlert
+}
 
-const CSS_PAGE = props => {
+const CSS_PAGE = (props) => {
   return (
     <div className="Csspage">
       <div className="Csspage__container">
-        {[0,1,2,3].map(elem => (
+        {Alerts.map((alert) => (
           <SystemMessage
-            key={elem}
-            title="Warning"
-            emoji="⚠"
-            description="Lorem ipusmdfsdf sdfmsdFM, DSFMO0WEC WEDFMWIEFP WEDF WEFD WEF WIOEF"
-            cta="Try again"
+            key={alert.id}
+            title={alert.title}
+            emoji={alert.emoji}
+            description={alert.description}
+            cta={alert.cta}
+            theme={themes[alert.theme]}
           />
         ))}
-
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default CSS_PAGE;

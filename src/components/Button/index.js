@@ -6,6 +6,7 @@ const Button = props => (
     <button 
       className="btn__element" 
       onClick={props.onClick}
+      style={{color: props.theme}}
     >
       {/* cta = call to action */}
       {props.cta}
