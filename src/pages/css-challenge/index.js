@@ -16,6 +16,7 @@ let themes = {
 const CSS_PAGE = (props) => {
   return (
     <div className="Csspage">
+      <h1>CSS Challenge</h1>
       <div className="Csspage__container">
         {Alerts.map((alert) => (
           <SystemMessage
