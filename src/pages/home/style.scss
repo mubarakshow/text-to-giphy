@@ -1,0 +1,12 @@
+.Home {
+  width: 90vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  scrollbar-width: 2px;
+  .container {
+    padding: 3em;
+  }
+}
