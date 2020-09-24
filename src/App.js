@@ -67,7 +67,7 @@ function App() {
         </GifContainer>
       </div>
       <footer>
-        <h3>Made with ❤ by <a href="https://github.com/mubarakshow/" target="_blank" rel="noopener noreferrer">Mubarak Showole</a></h3>
+        <h3>Made with ❤ by <a href="https://github.com/mubarakshow/text-to-giphy" target="_blank" rel="noopener noreferrer">Mubarak Showole</a></h3>
       </footer>
     </div>
   );
