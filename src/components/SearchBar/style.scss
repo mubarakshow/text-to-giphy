@@ -1,0 +1,19 @@
+.searchbarDiv {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: aquamarine;
+  padding: 15px;
+  border: none;
+  .searchbar {
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    font-size: medium;
+    border-radius: .2em;
+    border: none;
+    ::placeholder {
+      color: brown;
+    }
+  }
+}
