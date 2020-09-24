@@ -1,0 +1,16 @@
+$orange-light: #ffa600;
+$orange-dark: #ff3d00;
+$red-light: #FF1744;
+$red-dark: #d81b60;
+$green-light: #00E676;
+$green-dark: #00c853;
+
+$warning: $orange-light 0%, $orange-dark 60%;
+$good: $green-light 0%, $green-dark 60%;
+$bad: $red-light 0%, $red-dark 60%;
+
+:export {
+  goodAlert: $good;
+  warningAlert: $warning;
+  dangerAlert: $bad;
+}
