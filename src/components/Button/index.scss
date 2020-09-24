@@ -1,4 +1,14 @@
 .btn {
   &__element {
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 7px 15px;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 0 4px 1px 1px rgba(0, 0, 0, 0.1), 0 4px 20px 2px rgba(0, 0, 0, 0.05);
+    // color: linear-gradient(left, );
   }
 }

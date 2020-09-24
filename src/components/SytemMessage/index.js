@@ -1,16 +1,17 @@
 import React from "react";
 import Button from '../Button'
+import './style.scss'
 
 const SystemMessage = (props) => {
   return (
     <div className="sysmsg">
       <div className="sysmsg__container">
-        <h3 className="sysmsg__title">
+        <p className="sysmsg__title">
           {props.title} <span>{props.emoji}</span>
-        </h3>
+        </p>
         <p className="sysmsg__description">{props.description}</p>
         <Button
-          cta="Do Something"
+          cta={props.cta}
         />
       </div>
     </div>

@@ -1,0 +1,9 @@
+$orange: #ffa600;
+$blue: #82d2e5;
+$green: #c1d72e;
+
+$theme-gradient: (
+  warning: $orange 50%, $green 30%, $blue 20%,
+  good: $orange 10%, $green 70%, $blue 20%,
+  bad: $orange 80%, $green 10%, $blue 20%
+);

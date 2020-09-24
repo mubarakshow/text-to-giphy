@@ -1,0 +1,16 @@
+.Csspage {
+  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;900&display=swap");
+  display: flex;
+  justify-content: center;
+  font-family: "Nunito", sans-serif !important;
+  width: 100vw;
+  height: 100vh;
+  // background-color: darkorange;
+  &__container {
+    padding: 2em;
+    width: 1024px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 1em;
+  }
+}
