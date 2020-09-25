@@ -3,6 +3,15 @@ import Button from "../Button";
 import "./style.scss";
 
 const SystemMessage = (props) => {
+  
+  const getTheme = (gradient) => {
+    let fullGradient = gradient.split(", ");
+    let darkerShade = fullGradient[1]
+    let darkerColor = darkerShade.split(" ")[0];
+    console.log('darkerColor', darkerColor)
+    return darkerColor;
+  }
+
   return (
     <div className="sysmsg">
       <div
@@ -16,7 +25,7 @@ const SystemMessage = (props) => {
         <p className="sysmsg__description">{props.description}</p>
         <Button
           cta={props.cta}
-          theme={props.theme.split(", ")[1].split(" ")[0]}
+          theme={getTheme(props.theme)}
         />
       </div>
     </div>
