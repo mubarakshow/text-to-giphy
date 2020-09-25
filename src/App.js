@@ -2,7 +2,7 @@ import React from "react";
 import "./App.scss";
 import Home from "./pages/home";
 import CSS_PAGE from "./pages/css-challenge";
-import { Link, Route, Switch, useRouteMatch } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
