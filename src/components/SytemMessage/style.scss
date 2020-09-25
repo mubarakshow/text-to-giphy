@@ -14,10 +14,15 @@
     text-align: center;
     flex-direction: column;
     justify-content: center;
-    .sysmsg__title {
-      font-size: x-large;
-      font-weight: 800;
+    .sysmsg__header {
       padding-bottom: 1em;
+      &__title {
+        font-size: x-large;
+        font-weight: 800;
+      }
+      &__emoji {
+        font-size: larger;
+      }
     }
     .sysmsg__description {
       padding-bottom: 1em;
