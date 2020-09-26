@@ -1,8 +1,8 @@
-import React, { useState} from "react";
-import SearchBar from '../../components/SearchBar'
-import GifContainer from '../../components/GifContainer'
-import { GifLoader } from '../../components/Loader'
-import './style.scss'
+import React, { useState } from "react";
+import SearchBar from "../../components/SearchBar";
+import GifContainer from "../../components/GifContainer";
+import { GifLoader } from "../../components/Loader";
+import "./style.scss";
 
 const Home = (props) => {
   const [search, setSearch] = useState("");
@@ -60,15 +60,17 @@ const Home = (props) => {
       <SearchBar onChange={handleInputChange} onKeyDown={handleKeyDown} />
       <div className="container">
         <GifContainer onKeyDown={handleKeyDown}>
-          {!isLoading ? (
-            gifs.map((gif) => (
-              <div className="gifDiv" key={gif.id}>
-                <img src={gif.images.downsized.url} alt={gif.title} />
-              </div>
-            ))
-          ) : (
-            <GifLoader />
-          )}
+          {!isLoading
+            ? gifs.map((gif) => (
+                <div className="gifDiv" key={gif.id}>
+                  <img src={gif.images.downsized.url} alt={gif.title} />
+                </div>
+              ))
+            : [0,1,2,3,4,5,6,7].map((val) => (
+                <div className="gif__elem" key={val}>
+                  <GifLoader />
+                </div>
+              ))}
         </GifContainer>
       </div>
     </div>
