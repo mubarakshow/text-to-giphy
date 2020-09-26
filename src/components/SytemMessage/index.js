@@ -2,16 +2,14 @@ import React from "react";
 import Button from "../Button";
 import "./style.scss";
 
-const SystemMessage = (props) => {
-  
-  const getTheme = (gradient) => {
-    let fullGradient = gradient.split(", ");
-    let darkerShade = fullGradient[1]
-    let darkerColor = darkerShade.split(" ")[0];
-    console.log('darkerColor', darkerColor)
-    return darkerColor;
-  }
+const getTheme = (gradient) => {
+  let fullGradient = gradient.split(",");
+  let darkerShade = fullGradient[1].trim();
+  let darkerColor = darkerShade.split(" ")[0];
+  return darkerColor;
+};
 
+const SystemMessage = (props) => {
   return (
     <div className="sysmsg">
       <div
@@ -23,10 +21,8 @@ const SystemMessage = (props) => {
           <span className="sysmsg__header__emoji">{props.emoji}</span>
         </div>
         <p className="sysmsg__description">{props.description}</p>
-        <Button
-          cta={props.cta}
-          theme={getTheme(props.theme)}
-        />
+        <Button cta={props.cta} theme={getTheme(props.theme)} />
+        {/* <Button cta={props.cta} theme={props.theme} /> */}
       </div>
     </div>
   );

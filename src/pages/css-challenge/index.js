@@ -4,13 +4,13 @@ import "./style.scss";
 import { goodAlert, warningAlert, dangerAlert } from "./_variables.scss";
 import { Alerts } from "./mock-alerts";
 
-const CSS_PAGE = (props) => {
-  let themes = {
-    good: goodAlert,
-    warning: warningAlert,
-    danger: dangerAlert,
-  };
+let themes = {
+  good: goodAlert,
+  warning: warningAlert,
+  danger: dangerAlert,
+};
 
+const CSS_PAGE = (props) => {
   return (
     <div className="Csspage">
       <h1>CSS Challenge</h1>
