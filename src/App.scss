@@ -1,18 +1,8 @@
 .App {
-  width: 90vw;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow: hidden;
-  scrollbar-width: 2px;
-  ::-webkit-scrollbar {
-    width: 5px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-  }
-  .container {
-    padding: 3em;
+  .nav {
+    padding: 1em 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
